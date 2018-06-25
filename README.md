@@ -10,10 +10,20 @@ Segue abaixo algumas capturas de tela:
 
 ## Feed [Posts]
 
+![Screenshot1](https://raw.githubusercontent.com/douglira/facerocket/master/screenshots/screenshot1.png)
+
 ## Lista de amigos
+
+![Screenshot2](https://raw.githubusercontent.com/douglira/facerocket/master/screenshots/screenshot2.png)
 
 ## Notificações de amizade
 
+![Screenshot3](https://raw.githubusercontent.com/douglira/facerocket/master/screenshots/screenshot3.png)
+
 ## Busca de amigos
 
+![Screenshot4](https://raw.githubusercontent.com/douglira/facerocket/master/screenshots/screenshot4.png)
+
 ## Feed [Comentários]
+
+![Screenshot5](https://raw.githubusercontent.com/douglira/facerocket/master/screenshots/screenshot5.png)
