@@ -7,3 +7,13 @@ Aproveitei este desafio para por em prática meus conhecimentos em ReactJs que a
 # Interface
 
 Segue abaixo algumas capturas de tela:
+
+## Feed [Posts]
+
+## Lista de amigos
+
+## Notificações de amizade
+
+## Busca de amigos
+
+## Feed [Comentários]
