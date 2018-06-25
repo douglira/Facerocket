@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-console": "off",
+    "func-names": "off",
+    "no-underscore-dangle": "off",
+    "no-param-reassign": "warn"
+  }
+}
