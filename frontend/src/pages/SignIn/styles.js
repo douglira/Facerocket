@@ -8,59 +8,87 @@ export const Container = styled.div`
   flex: 1;
   height: 100%;
 
-  img {
-    height: 230px;
-    border-radius: 5px 0 0 5px;
-  }
-
-  form {
+  div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 350px;
-    height: 230px;
+    border-radius: 5px;
     background: #fff;
-    border-radius: 0 5px 5px 0;
-    padding: 15px;
-    box-sizing: border-box;
+    padding: 30px;
 
-    & > * {
-      align-self: stretch;
+    img {
+      border-radius: 5px;
     }
 
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 350px;
+      border-radius: 5px;
+      padding: 15px;
+      box-sizing: border-box;
 
-    input {
-      padding: 10px 20px;
-      color: #333;
-      margin-bottom: 15px;
-      border-radius: 3px;
-      border: 0.75px solid #999;
-      background: #f9f9f9;
-      font-size: 14px;
-    }
+      & > * {
+        align-self: stretch;
+      }
 
-    button {
-      padding: 10px 20px;
-      color: #fff;
-      border-radius: 3px;
-      border: 0;
-      background: #15d8a5;
-      font-size: 14px;
-      font-weight: bold
-      cursor: pointer;
-    }
 
-    a {
-      font-size: 14px;
-      color: #8d70ff;
-      margin-top: 10px;
-      align-self: center;
-      font-weight: bold;
+      input {
+        padding: 10px 20px;
+        color: #333;
+        margin-top: 15px;
+        border-radius: 3px;
+        border: 0.75px solid #999;
+        background: #f9f9f9;
+        font-size: 14px;
+
+      }
+
+      button {
+        padding: 10px 20px;
+        margin-top: 10px;
+        color: #fff;
+        border-radius: 3px;
+        border: 0;
+        background: #15d8a5;
+        font-size: 14px;
+        font-weight: bold
+        cursor: pointer;
+      }
     }
   }
 `;
+
+export const Style = {
+  resetPass: {
+    marginTop: '0',
+    fontSize: '12px',
+    fontWeight: 'normal',
+    alignSelf: 'flex-end',
+    color: '#999',
+    paddingBottom: '10px',
+    paddingTop: '2px',
+  },
+  newAccount: {
+    display: 'flex',
+    flex: '1',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    padding: '10px 20px',
+    border: '.7px solid #8d70ff',
+    borderRadius: '3px',
+    fontSize: '14px',
+    color: '#8d70ff',
+    marginTop: '20px',
+    alignSelf: 'center',
+    fontWeight: 'bold',
+  },
+};
 
 // export const Header = styled.header`
 //   display: flex;

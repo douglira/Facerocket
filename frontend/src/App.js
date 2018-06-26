@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Provider } from 'react-redux';
 import 'styles/global';
 import 'react-image-crop/dist/ReactCrop.css';
@@ -8,11 +8,11 @@ import Routes from 'routes';
 import store from 'store';
 
 const App = () => (
-  <div>
+  <Fragment>
     <Provider store={store}>
       <Routes />
     </Provider>
-  </div>
+  </Fragment>
 );
 
 export default App;

@@ -17,6 +17,7 @@ export const Form = styled.form`
   border-radius: 3px;
   padding: 20px 40px;
   background: #fff;
+  width: 80%;
 
   hr {
     border: 0.25px solid #ddd;

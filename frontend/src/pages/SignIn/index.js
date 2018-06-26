@@ -7,7 +7,7 @@ import { bindActionCreators } from 'redux';
 import { Creators as UserActions } from 'store/ducks/user';
 
 import logo from 'assets/images/logo-2.jpg';
-import { Container } from './styles';
+import { Container, Style } from './styles';
 
 class SignIn extends Component {
   static propTypes = {
@@ -49,23 +49,30 @@ class SignIn extends Component {
 
     return (
       <Container>
-        <img src={logo} alt="Facerocket" />
-        <form onSubmit={this.handleSignIn}>
-          <input
-            type="email"
-            placeholder="Email"
-            value={this.state.form.email}
-            onChange={this.handleChange('email')}
-          />
-          <input
-            type="password"
-            placeholder="Senha"
-            value={this.state.form.password}
-            onChange={this.handleChange('password')}
-          />
-          <button type="submit">Entrar</button>
-          <Link to="/signup" >Criar conta</Link>
-        </form>
+        <div>
+          <img src={logo} alt="Facerocket" />
+          <form onSubmit={this.handleSignIn}>
+            <input
+              type="email"
+              placeholder="Email"
+              value={this.state.form.email}
+              onChange={this.handleChange('email')}
+            />
+            <input
+              type="password"
+              placeholder="Senha"
+              value={this.state.form.password}
+              onChange={this.handleChange('password')}
+            />
+            <Link style={Style.resetPass} to="/reset_password">
+              Esqueceu sua senha?
+            </Link>
+            <button type="submit">Entrar</button>
+            <Link style={Style.newAccount} to="/signup">
+              Criar conta
+            </Link>
+          </form>
+        </div>
       </Container>
     );
   }

@@ -52,8 +52,6 @@ module.exports = (io) => {
         if (me.isFriend(post.author._id)) {
           socket.emit(`posts.${type}`, data.documentKey);
         }
-
-        await Post.watch().close();
       });
 
       PostNotification.watch().on('change', async (data) => {
@@ -63,8 +61,6 @@ module.exports = (io) => {
         if (data.operationType === 'insert') {
           socket.emit('post.notification.insert', data.documentKey);
         }
-
-        await PostNotification.watch().close();
       });
 
       Comment.watch().on('change', async (data) => {
@@ -74,8 +70,6 @@ module.exports = (io) => {
             postId: data.fullDocument.post,
           });
         }
-
-        await Comment.watch().close();
       });
 
       User.watch().on('change', async (data) => {
@@ -85,8 +79,6 @@ module.exports = (io) => {
         ) {
           socket.emit('user.edit', data.documentKey._id);
         }
-
-        await User.watch().close();
       });
     }
   });

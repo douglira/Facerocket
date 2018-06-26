@@ -5,6 +5,7 @@ import Notification from 'components/Notification';
 
 import Login from 'pages/SignIn';
 import Signup from 'pages/Signup';
+import ResetPass from 'pages/ResetPass';
 import Main from 'pages/Main';
 
 const Routes = () => (
@@ -14,6 +15,7 @@ const Routes = () => (
       <Switch>
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Signup} />
+        <Route exact path="/reset_password" component={ResetPass} />
         <Route path="/app" component={Main} />
         <Route render={() => <Redirect to="/login" />} />
       </Switch>
